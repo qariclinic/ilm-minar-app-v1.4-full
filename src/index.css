@@ -1,0 +1,23 @@
+/* سادہ اور صاف سی ایس ایس — اردو فانٹ شامل کرنے کی ہدایات نیچے README میں ہیں */
+@font-face {
+  font-family: 'NotoNastaliqUrduLocal';
+  src: local('Noto Nastaliq Urdu'), local('NotoNastaliqUrdu');
+  /* اگر آپ کے پاس فانٹ فائل ہے تو public/fonts/ میں رکھ کر نیچے uncomment کریں */
+  /* src: url('/fonts/NotoNastaliqUrdu-Regular.ttf') format('truetype'); */
+  font-weight: normal;
+  font-style: normal;
+}
+:root{--bg:#f8fafc;--card:#ffffff;--muted:#6b7280}
+*{box-sizing:border-box}
+html,body,#root{height:100%;margin:0;padding:0;font-family: 'NotoNastaliqUrduLocal', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial}
+body{background:var(--bg);color:#0f172a}
+.container{max-width:900px;margin:24px auto;padding:20px}
+.card{background:var(--card);border-radius:12px;padding:16px;box-shadow:0 6px 18px rgba(2,6,23,0.08);}
+.header-row{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.rtl{text-align:right}
+.small{font-size:0.9rem;color:var(--muted)}
+.logo{height:72px;width:72px}
+.section{margin-top:14px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.btn{display:inline-block;padding:8px 12px;border-radius:8px;background:#06b6d4;color:white;text-decoration:none;margin-top:8px}
+@media(max-width:700px){.grid{grid-template-columns:1fr}}

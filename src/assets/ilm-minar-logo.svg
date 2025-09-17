@@ -1,0 +1,19 @@
+<!-- سادہ 'علم مینار' لوگو (SVG) -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#0ea5a4"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="20" fill="white"/>
+  <g transform="translate(20,20)">
+    <!-- مینار -->
+    <rect x="40" y="10" width="20" height="120" rx="6" fill="url(#g)" />
+    <path d="M50 0 L70 10 L30 10 Z" fill="url(#g)" />
+    <!-- کتاب -->
+    <path d="M0 140 C20 110 80 110 100 140 L100 160 C80 130 20 130 0 160 Z" fill="#fde68a" opacity="0.95"/>
+    <!-- عنوان -->
+    <text x="110" y="85" font-size="16" text-anchor="start" font-family="Noto Nastaliq Urdu, serif">علم مینار</text>
+  </g>
+</svg>
